@@ -7,8 +7,9 @@ export interface MIconProps extends Omit<XmlProps, 'fill' | 'width' | 'height' |
   size?: number;
 }
 
-export const createSvgIcon = (xml: string) => 
-  ({ color, fillOpacity = 1.0, size = 24, ...props }: MIconProps<V>) => {
+export const createSvgIcon =
+  (xml: string) =>
+  ({ color, fillOpacity = 1.0, size = 24, ...props }: MIconProps) => {
     const defaultIconColor = Appearance.getColorScheme() === 'light' ? '#000000' : '#ffffff';
 
     return (
@@ -22,4 +23,3 @@ export const createSvgIcon = (xml: string) =>
       />
     );
   };
-};

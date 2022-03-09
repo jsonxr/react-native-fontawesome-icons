@@ -1,3 +1,2 @@
-icons/*.tsx
-icons/*.ts
+icons
 !icons/createSvgIcon.tsx
